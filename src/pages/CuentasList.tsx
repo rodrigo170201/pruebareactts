@@ -8,7 +8,7 @@ import { useAuth } from "../hooks/useAuth";
 interface Cuenta {
   id: number;
   numero_cuenta: string;
-  saldo: number; // Nuevo campo asumido
+  saldo: number;
 }
 
 const CuentaList = () => {
@@ -36,7 +36,6 @@ const CuentaList = () => {
       const data = await response.json();
       setCuentas(data);
 
-      // Inicializar el estado del saldo oculto para cada cuenta
       const visibilidadInicial: { [id: number]: boolean } = {};
       data.forEach((cuenta: Cuenta) => {
         visibilidadInicial[cuenta.id] = false;
