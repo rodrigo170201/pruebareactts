@@ -91,7 +91,7 @@ const TransferirForm = () => {
       <Container>
         <Card title="Transferir Fondos">
           <form onSubmit={handleSubmit} className="space-y-4">
-            {/* Select beneficiario */}
+            
             <div>
               <label className="block mb-1 font-medium">Seleccionar beneficiario (opcional)</label>
               <select
@@ -108,7 +108,7 @@ const TransferirForm = () => {
               </select>
             </div>
 
-            {/* Input número de cuenta */}
+            
             <div>
               <label className="block mb-1 font-medium">Cuenta destino</label>
               <input
@@ -125,7 +125,7 @@ const TransferirForm = () => {
               )}
             </div>
 
-            {/* Monto */}
+            
             <div>
               <label className="block mb-1 font-medium">Monto</label>
               <input
@@ -144,7 +144,7 @@ const TransferirForm = () => {
               )}
             </div>
 
-            {/* Descripción */}
+            
             <div>
               <label className="block mb-1 font-medium">Descripción</label>
               <input
