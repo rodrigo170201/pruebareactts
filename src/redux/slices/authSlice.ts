@@ -28,7 +28,7 @@ export const authSlice = createSlice({
 export const { loginUser, logoutUser } = authSlice.actions
 
 // Selector opcional si usas useSelector para acceder al username
-//export const selectUsername = (state: RootState) => state.auth.username
+export const selectUsername = (state: RootState) => state.auth.username
 
 // Exporta el reducer
 export default authSlice.reducer
